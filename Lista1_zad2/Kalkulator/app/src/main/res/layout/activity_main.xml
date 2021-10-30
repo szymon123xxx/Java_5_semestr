@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="664dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="67dp">
+
+        <TextView
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="match_parent"
+            android:layout_height="264dp"
+            android:ems="10"
+
+            android:text="0"
+            android:textAlignment="center"
+            android:freezesText="true"
+            android:textSize="40sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_weight="1"
+                    android:onClick="Event"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_weight="1"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:onClick="Event"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:onClick="Event"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_weight="1"
+                    android:text="3" />
+
+                <Button
+                    android:id="@+id/add"
+                    android:onClick="OperatorEvent"
+                    android:layout_width="30pt"
+                    android:layout_weight="1"
+                    android:layout_height="30pt"
+                    android:text="+" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/button4"
+                    android:onClick="Event"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_weight="1"
+                    android:text="4" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:onClick="Event"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_weight="1"
+                    android:text="5" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:onClick="Event"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_weight="1"
+                    android:text="6" />
+
+                <Button
+                    android:id="@+id/subtract"
+                    android:onClick="OperatorEvent"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_weight="1"
+                    android:text="-" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/button7"
+                    android:onClick="Event"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_weight="1"
+                    android:text="7" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:onClick="Event"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_weight="1"
+                    android:text="8" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:onClick="Event"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_weight="1"
+                    android:text="9" />
+
+                <Button
+                    android:id="@+id/multiply"
+                    android:onClick="OperatorEvent"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_weight="1"
+                    android:text="*" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/button0"
+                    android:onClick="Event"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_weight="4"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/clear"
+                    android:onClick="ClearEvent"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_weight="1"
+                    android:text="CLR" />
+
+                <Button
+                    android:id="@+id/divide"
+                    android:onClick="OperatorEvent"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_weight="1"
+                    android:text="/" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/equal"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_weight="3"
+                    android:onClick="equalEvent"
+                    android:text="=" />
+
+                <Button
+                    android:id="@+id/button17"
+                    android:layout_width="30pt"
+                    android:layout_height="30pt"
+                    android:layout_weight="1"
+                    android:text="," />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
