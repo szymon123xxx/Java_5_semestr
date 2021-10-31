@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PhysicsQuiz</string>
+    <string name="trueString">TRUE</string>
+    <string name="falseString">FALSE</string>
+    <string name="correct_answer">CORRECT</string>
+    <string name="next">NEXT</string>
+    <string name="incorrect_answer">INCORRECT</string>
+
+    <string name="question1">PhysicsQuiz1</string>
+    <string name="question2">PhysicsQuiz2</string>
+    <string name="question3">PhysicsQuiz3</string>
+
+</resources>
