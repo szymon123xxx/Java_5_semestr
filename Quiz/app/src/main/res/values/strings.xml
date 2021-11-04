@@ -6,8 +6,8 @@
     <string name="next">NEXT</string>
     <string name="incorrect_answer">INCORRECT</string>
 
-    <string name="question1">PhysicsQuiz1</string>
-    <string name="question2">PhysicsQuiz2</string>
-    <string name="question3">PhysicsQuiz3</string>
+    <string name="question1">Czy newton odkrył teorie grawitacji?</string>
+    <string name="question2">Czy jednostką siły jest niuton?</string>
+    <string name="question3">Czy Nikola Tesla był fizykiem?</string>
 
 </resources>
