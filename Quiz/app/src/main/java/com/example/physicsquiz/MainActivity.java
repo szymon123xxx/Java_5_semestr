@@ -203,7 +203,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
-    
+
     public void findBrowser(View view) {
         String sharedFact = textView.getText().toString();
         String url = "https://www.google.com/search?q=" + sharedFact;
