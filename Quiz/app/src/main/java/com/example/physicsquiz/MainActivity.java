@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         if (areAllTrue(isAlreadyAnswer)) {
             Button restartButton = findViewById(R.id.Restart);
             restartButton.setVisibility(View.VISIBLE);
-            pointsView.setText("Maksymalna ilosc punktow do zdobycia: " + maxPoints + "\n" + "Liczba poprawnych odpowiedzi: " + points + "\n" + "Liczba blednych odpowiedzi: " + falsePoints + "\n" + "Oszukano: " + cheated + "\n" + "Wynik koncowy: " + (points- (0.15*cheated)));
+            pointsView.setText("Maksymalna ilosc punktow do zdobycia: " + maxPoints + "\n" + "Liczba poprawnych odpowiedzi: " + points + "\n" + "Liczba blednych odpowiedzi: " + falsePoints + "\n" + "Oszukano: " + cheated + "\n" + "Wynik koncowy: " + (points- (0.15*cheated*points)));
         }
     }
 
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
         //wywolywanie klasy do sprawdzania
         if (areAllTrue(isAlreadyAnswer)) {
             restartButton.setVisibility(View.VISIBLE);
-            pointsView.setText("Maksymalna ilosc punktow do zdobycia: " + maxPoints + "\n" + "Liczba poprawnych odpowiedzi: " + points + "\n" + "Liczba blednych odpowiedzi: " + falsePoints + "\n" + "Oszukano: " + cheated + "\n" + "Wynik koncowy: " + (points- (0.15*cheated)));
+            pointsView.setText("Maksymalna ilosc punktow do zdobycia: " + maxPoints + "\n" + "Liczba poprawnych odpowiedzi: " + points + "\n" + "Liczba blednych odpowiedzi: " + falsePoints + "\n" + "Oszukano: " + cheated + "\n" + "Wynik koncowy: " + (points- (0.15*cheated*points)));
         }
     }
 
@@ -162,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
         isAlreadyAnswer = savedInstanceState.getBooleanArray("array");
         textView.setText(questions[i].getTextID());
         if (areAllTrue(isAlreadyAnswer))
-            pointsView.setText("Maksymalna ilosc punktow do zdobycia: " + maxPoints + "\n" + "Liczba poprawnych odpowiedzi: " + points + "\n" + "Liczba blednych odpowiedzi: " + falsePoints + "\n" + "Oszukano: " + cheated + "\n" + "Wynik koncowy: " + (points- (0.15*cheated)));
+            pointsView.setText("Maksymalna ilosc punktow do zdobycia: " + maxPoints + "\n" + "Liczba poprawnych odpowiedzi: " + points + "\n" + "Liczba blednych odpowiedzi: " + falsePoints + "\n" + "Oszukano: " + cheated + "\n" + "Wynik koncowy: " + (points- (0.15*cheated*points)));
 
     }
 
@@ -192,10 +192,10 @@ public class MainActivity extends AppCompatActivity {
         points += 0;
         isTrue.setEnabled(false);
         isFalse.setEnabled(false);
-        //spytac czemu na ostatnim pytaniu po wroceniu do maina nie wyswietla sie tekst
+        //gdy jestem na ostatnim pytaniu i przejde do innej aktywnosci to jest po to zeby mi tekst sie ponownie wyswietlil jak wroce
         if (areAllTrue(isAlreadyAnswer)) {
             restartButton.setVisibility(View.VISIBLE);
-            pointsView.setText("Maksymalna ilosc punktow do zdobycia: " + maxPoints + "\n" + "Liczba poprawnych odpowiedzi: " + points + "\n" + "Liczba blednych odpowiedzi: " + falsePoints + "\n" + "Oszukano: " + cheated + "\n" + "Wynik koncowy: " + (points- (0.15*cheated)));
+            pointsView.setText("Maksymalna ilosc punktow do zdobycia: " + maxPoints + "\n" + "Liczba poprawnych odpowiedzi: " + points + "\n" + "Liczba blednych odpowiedzi: " + falsePoints + "\n" + "Oszukano: " + cheated + "\n" + "Wynik koncowy: " + (points- (0.15*cheated*points)));
         }
         String cheatAnswer = String.valueOf(questions[i].isAnswer());
         Intent intent = new Intent(this, SecondActivity.class);
