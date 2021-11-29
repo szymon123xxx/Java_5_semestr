@@ -2,11 +2,19 @@ package com.example.list6_crime;
 import android.content.Context;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.UUID;
+import android.app.DatePickerDialog;
+import android.widget.DatePicker;
+import java.util.Calendar;
+import java.util.Date;
 
 public class CrimeLab {
+
+    Date currentTime = Calendar.getInstance().getTime();
+
     private static CrimeLab sCrimeLab;
     private LinkedList<Crime> mCrimes;
 
@@ -24,6 +32,7 @@ public class CrimeLab {
             crime.setmId(UUID.randomUUID());
             crime.setmTitle("Crime #" + i);
             crime.setmSolved(i % 2 == 0);
+            crime.setmDate(currentTime);
             mCrimes.add(crime);
         }
     }

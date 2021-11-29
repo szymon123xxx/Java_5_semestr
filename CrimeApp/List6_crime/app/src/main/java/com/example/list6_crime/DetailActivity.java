@@ -94,7 +94,6 @@ public class DetailActivity extends AppCompatActivity {
         });
     }
 
-
     public void onCheckBoxClicked(View view) {
         boolean checked = ((CheckBox) view).isChecked();
 

@@ -42,6 +42,7 @@
                 android:layout_centerVertical="true"
                 android:onClick="showDateTimePicker"
                 android:padding="10dp"
+                android:text="Pick time and Date"
                 android:textColor="@android:color/white" />
 
             <CheckBox

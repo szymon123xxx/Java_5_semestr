@@ -12,12 +12,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.TimePicker;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import java.util.Calendar;
 import java.util.LinkedList;
 
@@ -37,10 +36,14 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
 
         public final TextView wordText;
         final WordListAdapter adapter;
+        public final TextView setCrime;
+        public final ImageView setImage;
 
         public WordViewHolder(@NonNull View itemView, WordListAdapter adapter) {
             super(itemView);
             wordText = itemView.findViewById(R.id.word);
+            setCrime = itemView.findViewById(R.id.Date);
+            setImage = itemView.findViewById(R.id.Image);
             this.adapter = adapter;
             itemView.setOnClickListener(this);
 
@@ -70,6 +73,12 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
 
         Crime current = wordList.get(position);
         holder.wordText.setText(current.getmTitle());
+        if (current.getmDate() != null)
+            holder.setCrime.setText(current.getmDate().toString());
+        if (current.ismSolved())
+            holder.setImage.setVisibility(View.VISIBLE);
+        else
+            holder.setImage.setVisibility(View.INVISIBLE);
     }
 
 

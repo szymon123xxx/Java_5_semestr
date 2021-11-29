@@ -11,14 +11,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.UUID;
+import java.util.Calendar;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
     CrimeLab crime = CrimeLab.get(this);
     LinkedList<Crime> ListCrime = crime.getCrimes();
+    Date currentTime = Calendar.getInstance().getTime();
 
     private RecyclerView recyclerView;
     private WordListAdapter wordListAdapter;
@@ -39,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         Crime crime = new Crime();
         crime.setmId(UUID.randomUUID());
         crime.setmTitle("New crime");
+        crime.setmDate(currentTime);
         ListCrime.add(crime);
 
         Intent intent = new Intent(this, DetailActivity.class);
