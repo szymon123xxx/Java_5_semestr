@@ -38,6 +38,13 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(wordListAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        wordListAdapter.notifyDataSetChanged();
+
     }
 
     public void createCrime(View view){
@@ -49,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra("title", crime.getmId().toString());
-//        intent.putExtra("title2", crime.getmId2());
         intent.putExtra("title3", wordListAdapter.getItemCount());
 
         startActivity(intent);
