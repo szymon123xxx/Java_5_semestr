@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Java5semestr/CrimeApp_lista7/List6_crime/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.32685185185185184" />
+        <entry key="..\:/Java5semestr/CrimeApp_lista7/List6_crime/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.32685185185185184" />
+        <entry key="..\:/Java5semestr/CrimeApp_lista7/List6_crime/app/src/main/res/drawable/ic_baseline_delete_forever_24.xml" value="0.3769230769230769" />
+        <entry key="..\:/Java5semestr/CrimeApp_lista7/List6_crime/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.3769230769230769" />
+        <entry key="..\:/Java5semestr/CrimeApp_lista7/List6_crime/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.3828125" />
+        <entry key="..\:/Java5semestr/CrimeApp_lista7/List6_crime/app/src/main/res/drawable/ic_launcher_background.xml" value="0.32685185185185184" />
+        <entry key="..\:/Java5semestr/CrimeApp_lista7/List6_crime/app/src/main/res/drawable/rounded_corner.xml" value="0.32685185185185184" />
+        <entry key="..\:/Java5semestr/CrimeApp_lista7/List6_crime/app/src/main/res/layout/activity_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/Java5semestr/CrimeApp_lista7/List6_crime/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Java5semestr/CrimeApp_lista7/List6_crime/app/src/main/res/layout/search_menu.xml" value="0.264" />
+        <entry key="..\:/Java5semestr/CrimeApp_lista7/List6_crime/app/src/main/res/layout/searchable.xml" value="0.13796296296296295" />
+        <entry key="..\:/Java5semestr/CrimeApp_lista7/List6_crime/app/src/main/res/layout/word_list_item.xml" value="0.4" />
+        <entry key="..\:/Java5semestr/CrimeApp_lista7/List6_crime/app/src/main/res/menu/search_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Java5semestr/lista6/List6_crime/app/src/main/res/layout/activity_detail.xml" value="0.264" />
+        <entry key="..\:/Java_5_semestr/CrimeApp_lista7/List6_crime/app/src/main/res/layout/activity_detail.xml" value="0.1" />
+        <entry key="..\:/Java_5_semestr/CrimeApp_lista7/List6_crime/app/src/main/res/layout/activity_detail_view_pager2.xml" value="0.1" />
+        <entry key="..\:/Java_5_semestr/CrimeApp_lista7/List6_crime/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Java_5_semestr/CrimeApp_lista7/List6_crime/app/src/main/res/layout/word_list_item.xml" value="0.1" />
+        <entry key="..\:/List6_crime/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/List6_crime/app/src/main/res/drawable/rounded_corner.xml" value="0.3828125" />
+        <entry key="..\:/List6_crime/app/src/main/res/layout/activity_detail.xml" value="0.1" />
+        <entry key="..\:/List6_crime/app/src/main/res/layout/activity_detail_view_pager2.xml" value="0.36666666666666664" />
+        <entry key="..\:/List6_crime/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
+        <entry key="..\:/List6_crime/app/src/main/res/layout/word_list_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/List6_crime/app/src/main/res/layout/word_list_item2.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
